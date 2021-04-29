@@ -28,7 +28,7 @@ let questionThree = prompt('Am I married? Please answer yes or no y/n.');
 //console.log(questionThree);
 
 if(questionThree === 'no' || questionThree === 'n'){
-  alert('Incorrect.' + username + ' Back of the line.');
+  alert('Incorrect.' + username + '!' ' Back of the line.');
 } else if(questionThree === 'yes' || questionThree === 'y'){
   alert('Yes! 29 years! I\'m a lucky man!');
 }
@@ -45,6 +45,7 @@ if(questionFour === 'no' || questionFour === 'n'){
 
 let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no y/n.');
 //console.log(questionFive)
-alert('I do help Veterans find work.');
+alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
+
 
 
