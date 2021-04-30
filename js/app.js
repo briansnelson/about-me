@@ -28,7 +28,8 @@ let questionThree = prompt('Am I married? Please answer yes or no y/n.').toLower
 //console.log(questionThree);
 
 if(questionThree === 'no' || questionThree === 'n'){
-  alert('Incorrect.' + username + '!' ' Back of the line.');
+  alert('Incorrect.' + username + '!' + ' Back of the line.');
+  
 } else if(questionThree === 'yes' || questionThree === 'y'){
   alert('Yes! 29 years! I\'m a lucky man!');
 }
