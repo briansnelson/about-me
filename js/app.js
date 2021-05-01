@@ -48,5 +48,21 @@ let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no
 //console.log(questionFive)
 alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
 
+let questionSix = prompt('How old am I? Take a stab, you got 4 chances to be right.');
+console.log(questionSix);
+
+for(let i = 0; i < 4; i++){
+  if(questionSix.parseI === 51){
+    alert('Well done!, I am 51 years old.');
+    console.log('questionSix: ' + questionSix)
+  } else if(questionSix < 51){
+    questionSix = prompt('Thank you, but I\'m older than that. Guess again. ');
+} else if(questionSix > 51){
+    questionSix = prompt('Damn Bro! Do I look that old? Guess again');
+  }
+}
+
+
+
 
 
