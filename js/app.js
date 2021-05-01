@@ -48,17 +48,25 @@ let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no
 //console.log(questionFive)
 alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
 
-let questionSix = prompt('How old am I? Take a stab, you got 4 chances to be right.');
-console.log(questionSix);
+let correctAnswer = 51
+let tries = 4
 
-for(let i = 0; i < 4; i++){
-  if(questionSix.parseI === 51){
-    alert('Well done!, I am 51 years old.');
-    console.log('questionSix: ' + questionSix)
-  } else if(questionSix < 51){
-    questionSix = prompt('Thank you, but I\'m older than that. Guess again. ');
-} else if(questionSix > 51){
-    questionSix = prompt('Damn Bro! Do I look that old? Guess again');
+
+//console.log(questionSix);
+
+for(let i = 0; i < tries; i++){
+  let questionSix = +prompt('How old am I? Take a stab, you got 4 chances to be right.');
+  if(questionSix === correctAnswer){
+    alert(`Well done!, I am ${correctAnswer} years old.`);
+    break;
+//console.log('Well done!, I am 51 years old.')
+  } else if(questionSix < correctAnswer){
+    alert('Thank you, but I\'m older than that.');
+  } else if(questionSix > correctAnswer){
+    alert('Damn Bro! Do I look that old?');
+  }
+  if(i === 3){
+    alert('Sorry, out of guesses, my age is 51.');
   }
 }
 
