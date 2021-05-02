@@ -70,6 +70,54 @@ for(let i = 0; i < tries; i++){
   }
 }
 
+'use strict'
+
+let formerTitles = ['Sir', 'Major', 'Sergeant', 'Private', 'Veteran', 'Dirty Hippie'];
+//console.log(formerTitles.length)
+let answer = false
+let attemptsRemaining = 6;
+// let questionSeven = prompt('How have people addressed me over the years?');
+// //console.log('How have people addressed me over the years?');
+// for (let i = 0; i < formerTitles.length; i++){
+//   if(questionSeven === formerTitles[i]){
+//    alert(`Correct. I've also been called ${formerTitles}`);
+//    answer=true
+//    break;
+//     //console.log(questionSeven);
+//   }
+// }
+// if (!answer) {
+//   alert(`Not exactly, try again = ${attemptsRemaining} guesses left`);
+// }
+ 
+
+
+
+
+  // } //else if (questionSeven !== formerTitles[i]){
+  //   alert(`Not exactly, try again = ${attemptsRemaining} guesses left`);
+  // }}
+
+while (attemptsRemaining && !answer){
+
+  attemptsRemaining--;
+  let questionSeven = prompt('How have people addressed me over the years?');
+//console.log('How have people addressed me over the years?');
+  for (let i = 0; i < formerTitles.length; i++){
+    if(questionSeven === formerTitles[i]){
+    alert(`Correct. I've also been called ${formerTitles}`);
+    answer=true
+    break;
+      //console.log(questionSeven);
+    }
+  }
+  if (!answer) {
+    alert(`Not exactly, try again = ${attemptsRemaining} guesses left`);
+  }
+  //console.log(`Not exactly, try again = ${attemptsRemaining}`);
+}
+
+
 
 
 

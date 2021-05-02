@@ -1,12 +1,12 @@
 # about-me
 //working with Heather, Matt, Phil
-# LAB - Number
+# LAB - 02 & )3
 
-## Project Name
+## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This lab is creating some content about me, but learning to code with familiar content. This is harder than it looks. 
 
-### Author: Student/Group Name
+### Author: Brian/201n22
 
 ### Links and Resources
 
@@ -15,5 +15,9 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* So Jamison and I worked a lot together. I stayed by myself to get the initial part of question 6, then needed some help. Quen and Jamison helped a lot.
+
+* Ryan and Norton--and Brad from 102 are simply terrific instructors. Patience is their watchword. Ryan is great about making me think before giving me an answer. It hurts, but it is beneficial. 
+
+* I can feel how this didn't totally stick yet today. It will likely be another day or two/three before I begin to feel somewhat comfortable with these loops. I will have erotic dreams about the explanation point! What a beautiful symbol--that SAVED me to get out of both loops for questions 6 and 7. 
+
