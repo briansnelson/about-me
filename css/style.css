@@ -1,12 +1,30 @@
 
+head {
+  color: #ffff 
+    
+}
+title {
+  color: #3bbeff 
+}
+  img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 500px;
+  height: auto;
+}
+p {
+  border-width: 1px solid #47567a;
+}
 h1 {
-  color: darkgoldenrod;  
+  color: #47567a;  
   font-size: 3em;
 }
 
 ul {
   margin: 25px;
   list-style-type: disc;
+  list-style-position: inside;
 }
 
 ol {
