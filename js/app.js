@@ -53,10 +53,12 @@ function q4(){
   }
 }
 
-let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no y/n.').toLowerCase();
-//console.log(questionFive)
-alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
-totalScore++;
+function q5(){
+  let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no y/n.').toLowerCase();
+  //console.log(questionFive)
+  alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
+  totalScore++;
+}
 
 let correctAnswer = 51
 let tries = 4
@@ -136,5 +138,5 @@ alert(`Congrats Bro! You got ${totalScore} of 7 question.`);
 q1();
 q2();
 q3();
-
-
+q4();
+q5();
