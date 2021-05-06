@@ -60,30 +60,32 @@ function q5(){
   totalScore++;
 }
 
-let correctAnswer = 51
-let tries = 4
+
+function q6(){
+  let correctAnswer = 51
+  let tries = 4
 
 
-//console.log(questionSix);
+  //console.log(questionSix);
 
-for(let i = 0; i < tries; i++){
-  let questionSix = +prompt('How old am I? Take a stab, you got 4 chances to be right.');
-  if(questionSix === correctAnswer){
-    alert(`Well done!, I am ${correctAnswer} years old.`);
-    totalScore++;
-    break;
-//console.log('Well done!, I am 51 years old.')
-  } else if(questionSix < correctAnswer){
-    alert('Thank you, but I\'m older than that.');
-  } else if(questionSix > correctAnswer){
-    alert('Damn Bro! Do I look that old?');
-  }
-  if(i === 3){
-    alert('Sorry, out of guesses, my age is 51.');
+  for(let i = 0; i < tries; i++){
+    let questionSix = +prompt('How old am I? Take a stab, you got 4 chances to be right.');
+    if(questionSix === correctAnswer){
+      alert(`Well done!, I am ${correctAnswer} years old.`);
+      totalScore++;
+      break;
+    //console.log('Well done!, I am 51 years old.')
+    } else if(questionSix < correctAnswer){
+      alert('Thank you, but I\'m older than that.');
+    } else if(questionSix > correctAnswer){
+      alert('Damn Bro! Do I look that old?');
+    }
+    if(i === 3){
+      alert('Sorry, out of guesses, my age is 51.');
+    }
   }
 }
 
-'use strict'
 
 let formerTitles = ['Sir', 'Major', 'Sergeant', 'Private', 'Veteran', 'Dirty Hippie'];
 //console.log(formerTitles.length)
@@ -140,3 +142,4 @@ q2();
 q3();
 q4();
 q5();
+q6();
