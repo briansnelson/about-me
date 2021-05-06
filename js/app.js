@@ -1,10 +1,12 @@
 'use strict';
 //console.log('Hello World!');
+//declare variables
 let totalScore = 0;
 let username = prompt('Hello! What is your name?');
 
 alert('What\'s up, ' + username + '? Let\'s get to know each other. Please answer yes or no y/n to the questions.');
 
+//functions declared
 function q1(){
   let questionOne = prompt('Was I a Soldier? Please answer yes or no y/n.').toLowerCase();
   //console.log(questionOne);
@@ -52,15 +54,12 @@ function q4(){
 
   }
 }
-
 function q5(){
   let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no y/n.').toLowerCase();
   //console.log(questionFive)
   alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
   totalScore++;
 }
-
-
 function q6(){
   let correctAnswer = 51
   let tries = 4
@@ -85,7 +84,6 @@ function q6(){
     }
   }
 }
-
 function q7(){
   let formerTitles = ['Sir', 'Major', 'Sergeant', 'Private', 'Veteran', 'Dirty Hippie'];
   //console.log(formerTitles.length)
@@ -136,6 +134,7 @@ function q7(){
 
   alert(`Congrats Bro! You got ${totalScore} of 7 question.`);
 }
+
 //call functions
 q1();
 q2();
