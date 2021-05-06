@@ -10,20 +10,19 @@ alert('What\'s up, ' + username + '? Let\'s get to know each other. Please answe
 
 
 //functions declared
-function q1(){
+function masterQuestion(){
   let questionOne = prompt(`${questionArray[0]} Please answer yes or no y/n.`).toLowerCase();
   //console.log(questionOne);
-
+  
   if(questionOne === corrrectAnswers[0] || questionOne === corrrectAnswers[1]){
     //console.log('questionOne:' + questionOne);
     alert('That\'s right!');
     totalScore++;
-
-  } else if(questionOne === 'no' || questionOne === 'n'){
+  
+  } 
+  else if(questionOne === 'no' || questionOne === 'n'){
     alert('No, in fact I was a Soldier for 27 years.');
   }
-}
-function q2(){
   let questionTwo = prompt(`${questionArray[1]} Please answer yes or no y/n.`).toLowerCase();
   //console.log(questionTwo);
   if(questionTwo === 'no'  || questionTwo === 'n'){
@@ -31,12 +30,11 @@ function q2(){
   } else if(questionTwo === corrrectAnswers[0] || questionTwo === corrrectAnswers[1]) {
     alert('You Sir aaaarrrrrreee correct!');
     totalScore++;
+    
   }
-}
-function q3(){
   let questionThree = prompt(`${questionArray[2]}Please answer yes or no y/n.`).toLowerCase();
   //console.log(questionThree);
-
+  
   if(questionThree === 'no' || questionThree === 'n'){
     alert('Incorrect.' + username + '!' + ' Back of the line.');
     
@@ -44,8 +42,6 @@ function q3(){
     alert('Yes! 29 years! I\'m a lucky man!');
     totalScore++;
   }
-}
-function q4(){
   let questionFour = prompt(`${questionArray[3]} Please answer yes or no.`).toLowerCase();
   //console.log(questionFour);
 
@@ -56,13 +52,24 @@ function q4(){
     totalScore++;
 
   }
-}
-function q5(){
   let questionFive = prompt(`${questionArray[4]} Please answer yes or no y/n.`).toLowerCase();
   //console.log(questionFive)
   alert(username + ' I do help Veterans find jobs. Thanks for taking the time to get to know me. Have a great day.');
   totalScore++;
+
 }
+// function q1(){
+//   }
+// function q2(){
+// }
+// function q3(){
+// }
+// function q4(){
+  
+// }
+// function q5(){
+  
+
 function q6(){
   let correctAnswer = 51
   let tries = 4
@@ -138,11 +145,6 @@ function q7(){
   alert(`Congrats Bro! You got ${totalScore} of 7 question.`);
 }
 
-//call functions
-q1();
-q2();
-q3();
-q4();
-q5();
+masterQuestion();
 q6();
 q7();
