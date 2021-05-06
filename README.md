@@ -21,3 +21,8 @@ This lab is creating some content about me, but learning to code with familiar c
 
 * I can feel how this didn't totally stick yet today. It will likely be another day or two/three before I begin to feel somewhat comfortable with these loops. I will have erotic dreams about the explanation point! What a beautiful symbol--that SAVED me to get out of both loops for questions 6 and 7. 
 
+## Lab 4. Pair Programming
+
+This was a terrific experience. I learned so much faster with Quen. I was the driver the first night, I needed the reps writing the code even if I didn't fully understand it. When Quen was the driver the next day--he did in 8 minutes what I took about an hour to complete! Crazy. 
+
+I am looking at the submission details--and I don't understand accessibility. I have no idea what an accessibility audit is...should have asked before leaving class.
