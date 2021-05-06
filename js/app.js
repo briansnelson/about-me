@@ -1,54 +1,57 @@
 'use strict';
 //console.log('Hello World!');
-let totalScore = 0
+let totalScore = 0;
 let username = prompt('Hello! What is your name?');
 
 alert('What\'s up, ' + username + '? Let\'s get to know each other. Please answer yes or no y/n to the questions.');
 
-let questionOne = prompt('Was I a Soldier? Please answer yes or no y/n.').toLowerCase();
-//console.log(questionOne);
+function q1(){
+  let questionOne = prompt('Was I a Soldier? Please answer yes or no y/n.').toLowerCase();
+  //console.log(questionOne);
 
-if(questionOne === 'yes' || questionOne === 'y'){
-  //console.log('questionOne:' + questionOne);
-  alert('That\'s right!');
-  totalScore++;
+  if(questionOne === 'yes' || questionOne === 'y'){
+    //console.log('questionOne:' + questionOne);
+    alert('That\'s right!');
+    totalScore++;
 
-} else if(questionOne === 'no' || questionOne === 'n'){
-  alert('No, in fact I was a Soldier for 27 years.');
+  } else if(questionOne === 'no' || questionOne === 'n'){
+    alert('No, in fact I was a Soldier for 27 years.');
+  }
 }
-
-
-let questionTwo = prompt('Do I own a business? Please answer yes or no y/n.').toLowerCase();
-//console.log(questionTwo);
-if(questionTwo === 'no'  || questionTwo === 'n'){
-  alert('I\'m basically unemployable, ' + username + ' so I can only work for myself!');
-} else if(questionTwo === 'yes' || questionTwo === 'y'){
-  alert('You Sir aaaarrrrrreee correct!');
-  totalScore++;
+function q2(){
+  let questionTwo = prompt('Do I own a business? Please answer yes or no y/n.').toLowerCase();
+  //console.log(questionTwo);
+  if(questionTwo === 'no'  || questionTwo === 'n'){
+    alert('I\'m basically unemployable, ' + username + ' so I can only work for myself!');
+  } else if(questionTwo === 'yes' || questionTwo === 'y'){
+    alert('You Sir aaaarrrrrreee correct!');
+    totalScore++;
+  }
 }
+function q3(){
+  let questionThree = prompt('Am I married? Please answer yes or no y/n.').toLowerCase();
+  //console.log(questionThree);
 
-let questionThree = prompt('Am I married? Please answer yes or no y/n.').toLowerCase();
-//console.log(questionThree);
-
-if(questionThree === 'no' || questionThree === 'n'){
-  alert('Incorrect.' + username + '!' + ' Back of the line.');
-  
-} else if(questionThree === 'yes' || questionThree === 'y'){
-  alert('Yes! 29 years! I\'m a lucky man!');
-  totalScore++;
+  if(questionThree === 'no' || questionThree === 'n'){
+    alert('Incorrect.' + username + '!' + ' Back of the line.');
+    
+  } else if(questionThree === 'yes' || questionThree === 'y'){
+    alert('Yes! 29 years! I\'m a lucky man!');
+    totalScore++;
+  }
 }
+function q4(){
+  let questionFour = prompt('Do I rescue animals? Please answer yes or no.').toLowerCase();
+  //console.log(questionFour);
 
-let questionFour = prompt('Do I rescue animals? Please answer yes or no.').toLowerCase();
-//console.log(questionFour);
+  if(questionFour === 'no' || questionFour === 'n'){
+    alert('Actually my wife and I co-founded Kindred Souls Foundation in 2005.');
+  } else if(questionFour === 'yes' || questionFour === 'y'){
+    alert('Yes! Hope to see you run the stairs this August!');
+    totalScore++;
 
-if(questionFour === 'no' || questionFour === 'n'){
-  alert('Actually my wife and I co-founded Kindred Souls Foundation in 2005.');
-} else if(questionFour === 'yes' || questionFour === 'y'){
-  alert('Yes! Hope to see you run the stairs this August!');
-  totalScore++;
-
+  }
 }
-
 
 let questionFive = prompt('Do I help Veterans find jobs? Please answer yes or no y/n.').toLowerCase();
 //console.log(questionFive)
@@ -129,9 +132,9 @@ console.log(totalScore);
 
 alert(`Congrats Bro! You got ${totalScore} of 7 question.`);
 
-
-
-
-
+//call functions
+q1();
+q2();
+q3();
 
 
